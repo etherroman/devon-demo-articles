@@ -1,0 +1,16 @@
+services:
+  articles:
+    build: .
+    ports:
+      - "127.0.0.1:8082:8082"
+    environment:
+      HTTP_ADDR: 0.0.0.0:8082
+      DB_PATH: /app/data/articles.db
+      GIN_MODE: release
+      JWT_SECRET: ${JWT_SECRET:?Set a random JWT_SECRET of at least 32 bytes}
+    volumes:
+      - articles_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  articles_data:

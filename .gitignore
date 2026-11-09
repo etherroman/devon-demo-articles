@@ -1,0 +1,20 @@
+# Local configuration, databases and generated output
+.env
+.env.*
+!.env.example
+data/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+bin/
+build/
+vendor/
+coverage.out
+coverage.html
+*.test
+*.exe
+*.log
+.DS_Store
+.idea/
+.vscode/
