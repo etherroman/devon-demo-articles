@@ -31,6 +31,7 @@ Go 1.25, Gin 1.11.0, GORM 1.31.1, golang-jwt/jwt v5.3.0, x/crypto bcrypt를 사�
 | `internal/seed` | 학습용 글과 관계 데이터, 반복 시드 테스트 |
 | `scripts` | PowerShell 실행·실제 HTTP 시나리오 |
 | `docs/verification.md` | 실제 수행한 검증과 미검증 범위 |
+| `docs/publication.md` | GitHub 게시와 API 수집 조건 판정 |
 
 요청은 Gin → 선택적 JWT 확인 → 변경 작업의 로그인 확인 → 핸들러의 JSON 파싱 → 서비스의 입력·작성자 검사 → 저장소의 GORM 쿼리 → 응답 모델 순서로 처리됩니다. 저장소는 HTTP 상태 코드를 모르며, 외부 응답에는 비밀번호 해시나 DB 오류를 내보내지 않습니다. 공개 글·댓글의 author에는 username만 포함합니다.
 
