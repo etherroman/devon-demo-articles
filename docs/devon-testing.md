@@ -27,7 +27,7 @@ Go, Gin, GORM, SQLite, JWT, bcrypt, REST API, middleware, slug, pagination, 복�
 
 ## 독립 Public 저장소 게시
 
-아래 명령은 이 프로젝트 디렉터리에서 PowerShell로 실행한다. 이 작업에서는 GitHub 저장소 생성이나 push를 수행하지 않았다. 테스트 계정으로 GitHub CLI에 로그인한 뒤 `gh api user --jq .login`으로 소유자를 확인한다. 서비스 로그인 이메일/비밀번호를 소스 파일이나 Git 명령에 넣지 않는다.
+이 프로젝트는 테스트 계정 [etherroman/devon-demo-articles](https://github.com/etherroman/devon-demo-articles)의 독립 Public 저장소로 생성하고 push했다. 실제 API 확인 기록은 [게시 검증](publication.md)에 정리한다. 아래 명령은 새 계정이나 새 저장소에 별도로 게시할 때의 예시다. GitHub CLI 로그인 후 `gh api user --jq .login`으로 소유자를 확인하며, 서비스 로그인 이메일/비밀번호를 소스 파일이나 Git 명령에 넣지 않는다.
 
 ~~~powershell
 gh auth login --hostname github.com --web

@@ -72,7 +72,7 @@ database initialized
 ## 확인하지 않은 범위
 
 - Docker가 설치되지 않아 Dockerfile·Compose의 실제 이미지 빌드와 컨테이너 실행은 수행하지 않았습니다.
-- GitHub Actions는 설정 파일만 제공했으며 원격 CI 실행은 하지 않았습니다.
-- 공개 GitHub 저장소 생성·push 및 실제 DevOn 계정 업로드는 이 독립 프로젝트 구현 검증에 포함하지 않습니다.
+- 최초 게시 커밋에서 [GitHub Actions](https://github.com/etherroman/devon-demo-articles/actions/runs/42632374064)가 성공했습니다. Ubuntu에서 의존성 검증·전체 테스트·vet·build를 실행했습니다.
+- 독립 Public GitHub 저장소를 생성하고 push했습니다. API 수집 조건 확인은 [publication.md](publication.md)에 기록합니다. 실제 DevOn 서비스 내부의 수집·분석 실행은 별도입니다.
 - 전체 RealWorld 호환성 테스트, 부하·동시 쓰기 테스트, 운영 TLS·요청 제한·배포는 수행하지 않았습니다.
 - 프런트엔드와 브라우저 화면은 이 API 데모의 구현 범위가 아닙니다.
